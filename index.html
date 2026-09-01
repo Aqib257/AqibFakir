@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>AQIB FAKIR | IT Professional, System Administrator & Web Developer</title>
+  <meta name="description" content="Official professional portfolio and resume of Aqib Fakir - IT Professional with 5 years of experience in System Administration, Computer Operations, Web Development & IT Support.">
+  <meta name="keywords" content="Aqib Fakir, IT Professional, System Administrator, Computer Operator, Web Developer, WordPress, Muzaffargarh, BZU IT, Pakistan IT Specialist">
+  <meta name="author" content="Aqib Fakir">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AQIB FAKIR - IT Professional & Web Developer">
+  <meta property="og:description" content="5+ Years of experience in System Administration, Computer Operations, IT Support & Front-End Web Development.">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Glowing Mouse Cursor / Ambient Light Tracker -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Background Decorative Shapes & Gradients -->
+  <div class="bg-decoration-canvas" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION BAR (Transparent / Glassmorphism)
+       ========================================================================== -->
+  <header class="navbar-wrapper" id="mainHeader">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-avatar">AF</div>
+        <div class="brand-text">
+          <span class="brand-name">AQIB FAKIR</span>
+          <span class="brand-tag">IT & SYSADMIN</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
+        <li class="nav-item"><a href="#certifications" class="nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Mode Switch -->
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Color Theme" title="Toggle Light/Dark Theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+
+        <!-- View / Print One-Page Resume Link -->
+        <a href="resume.html" class="btn btn-sm btn-primary-glass" title="Open Clean 1-Page Printable CV">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>1-Page CV</span>
+        </a>
+
+        <!-- Mobile Drawer Toggle Hamburger -->
+        <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Open Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand-avatar">AF</div>
+      <span class="drawer-title">AQIB FAKIR</span>
+      <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+      <li><a href="#experience" class="mobile-nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><i class="fa-solid fa-layer-group"></i> Technical Skills</a></li>
+      <li><a href="#certifications" class="mobile-nav-link"><i class="fa-solid fa-award"></i> Certifications</a></li>
+      <li><a href="#education" class="mobile-nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#reference" class="mobile-nav-link"><i class="fa-solid fa-handshake"></i> Reference</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      <li class="drawer-action-item">
+        <a href="resume.html" class="btn btn-primary w-full">
+          <i class="fa-solid fa-file-pdf"></i> View Printable Resume
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- ==========================================================================
+       HERO SECTION (Interactive Dynamic UI with Typing Effect & Badges)
+       ========================================================================== -->
+  <main id="main-content">
+    <section id="hero" class="hero-section section">
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for IT & Technical Roles</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <span class="text-gradient">AQIB FAKIR</span>
+          </h1>
+
+          <div class="hero-typing-wrapper">
+            <span class="typing-prefix">Specialized in</span>
+            <span class="typing-text" id="typingText">Computer Operations</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            A results-driven <strong>IT Professional</strong> with <strong>5 years of dedicated experience</strong> as a Computer Operator and System Administrator at Chaudhary Brothers Textile Mills. Proven expertise in IT infrastructure, technical support, web development, and digital system administration.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="resume.html" class="btn btn-primary btn-lg tilt-effect">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download / Print CV</span>
+            </a>
+            <a href="#experience" class="btn btn-glass btn-lg tilt-effect">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>View Experience</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary-glass btn-lg tilt-effect">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Quick Stats Counter -->
+          <div class="hero-stats-grid">
+            <div class="stat-card tilt-effect">
+              <div class="stat-number" data-target="5">5<span>+</span></div>
+              <div class="stat-label">Years Corporate Experience</div>
+            </div>
+            <div class="stat-card tilt-effect">
+              <div class="stat-number" data-target="10">10<span>+</span></div>
+              <div class="stat-label">Technical Competencies</div>
+            </div>
+            <div class="stat-card tilt-effect">
+              <div class="stat-number" data-target="8">8<span>+</span></div>
+              <div class="stat-label">Professional Certifications</div>
+            </div>
+            <div class="stat-card tilt-effect">
+              <div class="stat-number" data-target="100">100<span>%</span></div>
+              <div class="stat-label">Uptime & Reliability Focus</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="profile-card-3d tilt-card" id="profileTiltCard">
+            <div class="profile-card-inner">
+              <div class="profile-avatar-frame">
+                <div class="avatar-ring-animated"></div>
+                <img src="aqib.jpg" 
+                     alt="Aqib Fakir Portrait" 
+                     id="heroProfileImg"
+                     class="profile-img">
+              </div>
+
+              <div class="profile-identity">
+                <h3 class="profile-name">AQIB FAKIR</h3>
+                <p class="profile-role">Computer Operator & System Administrator</p>
+                <div class="profile-location">
+                  <i class="fa-solid fa-location-dot"></i> Muzaffargarh, Pakistan
+                </div>
+              </div>
+
+              <!-- Quick Info Badges -->
+              <div class="profile-tags">
+                <span class="ptag"><i class="fa-solid fa-server"></i> System Admin</span>
+                <span class="ptag"><i class="fa-solid fa-code"></i> Web Dev</span>
+                <span class="ptag"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+                <span class="ptag"><i class="fa-solid fa-brain"></i> AI & Prompts</span>
+              </div>
+
+              <!-- Fast Action Row -->
+              <div class="profile-quick-actions">
+                <a href="tel:+923147005271" class="quick-btn" title="Call Aqib Fakir">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+                <a href="mailto:aqibfakir6@gmail.com" class="quick-btn" title="Email Aqib Fakir">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <button class="quick-btn" id="openResumeModalBtn" title="Preview Resume Modal">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+
+              <!-- Floating Interactive Mini Badges -->
+              <div class="floating-badge badge-top-left floating-anim">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>5 Yrs SysAdmin</span>
+              </div>
+              <div class="floating-badge badge-bottom-right floating-anim-rev">
+                <i class="fa-solid fa-certificate"></i>
+                <span>NAVTTC & DigiSkills</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Aqib Fakir</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-card glass-panel reveal-on-scroll tilt-effect">
+            <div class="about-card-header">
+              <div class="header-icon-box">
+                <i class="fa-solid fa-user-gear"></i>
+              </div>
+              <div>
+                <h3 class="about-card-title">Professional Background</h3>
+                <span class="about-card-subtitle">Dedicated IT Specialist & Instructor</span>
+              </div>
+            </div>
+            <p class="about-text">
+              A motivated and highly responsible <strong>IT Professional</strong> with <strong>5 continuous years of hands-on experience</strong> as a Computer Operator and System Administrator at Chaudhary Brothers Textile Mills. 
+            </p>
+            <p class="about-text">
+              Equipped with deep practical knowledge in day-to-day computer operations, hardware troubleshooting, operating system maintenance, network administration, Microsoft Office, web development, and WordPress CMS. Additionally recognized for impactful teaching experience in government-funded programs (NAVTTC) and academic academies.
+            </p>
+            
+            <div class="personal-details-grid">
+              <div class="detail-item">
+                <span class="d-label"><i class="fa-solid fa-phone"></i> Phone:</span>
+                <span class="d-val"><a href="tel:+923147005271">+92 314 7005271</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="d-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="d-val"><a href="mailto:aqibfakir6@gmail.com">aqibfakir6@gmail.com</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="d-label"><i class="fa-solid fa-location-dot"></i> Address:</span>
+                <span class="d-val">Umer Farooq Colony, Muzaffargarh</span>
+              </div>
+              <div class="detail-item">
+                <span class="d-label"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                <span class="d-val">BS (IT) In Progress — BZU</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights-wrapper reveal-on-scroll">
+            
+            <div class="highlight-box glass-panel tilt-effect">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-language"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Languages</h4>
+                <div class="highlight-pills">
+                  <span class="pill">Urdu (Native / Bilingual)</span>
+                  <span class="pill">English (Professional Proficiency)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box glass-panel tilt-effect">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Hobbies & Interests</h4>
+                <div class="highlight-pills">
+                  <span class="pill"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+                  <span class="pill"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</span>
+                  <span class="pill"><i class="fa-solid fa-book-open"></i> Reading Books</span>
+                  <span class="pill"><i class="fa-solid fa-brain"></i> AI Prompt Exploration</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-box glass-panel tilt-effect">
+              <div class="highlight-icon">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <div class="highlight-info">
+                <h4>Community & Athletics</h4>
+                <div class="highlight-pills">
+                  <span class="pill"><i class="fa-solid fa-droplet"></i> Blood Center Multan Contributor</span>
+                  <span class="pill"><i class="fa-solid fa-medal"></i> Tug of War Competition</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL EXPERIENCE SECTION (Interactive Timeline)
+         ========================================================================== -->
+    <section id="experience" class="experience-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Track Record of Excellence</span>
+          <h2 class="section-title">Professional <span class="text-gradient">Experience</span></h2>
+          <p class="section-desc">5 Years of progressive industrial IT operations and technical teaching experience.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Card 1: Primary Role -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-icon"><i class="fa-solid fa-server"></i></div>
+            </div>
+            <div class="timeline-card glass-panel tilt-effect featured-role">
+              <div class="role-badge-pill">Major Industrial Role &bull; 5 Years</div>
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Computer Operator & System Administrator</h3>
+                  <div class="role-company"><i class="fa-regular fa-building"></i> Chaudhary Brothers Textile Mills</div>
+                </div>
+                <div class="role-period">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>01 Sep 2021 – 31 Aug 2026</span>
+                </div>
+              </div>
+              <div class="role-body">
+                <p class="role-summary">
+                  Orchestrated enterprise IT operations, hardware/software infrastructure, user administration, and system maintenance across corporate departments.
+                </p>
+                <ul class="role-responsibilities">
+                  <li><strong>IT Systems Management:</strong> Managed day-to-day computer operations, workstation installations, and office IT systems.</li>
+                  <li><strong>Technical Support:</strong> Provided Tier-1 and Tier-2 technical support to staff and administrative users, solving hardware/software tickets.</li>
+                  <li><strong>Network & Software:</strong> Configured computer systems, installed essential business software, managed secure files, and resolved local network issues.</li>
+                  <li><strong>Preventative Maintenance:</strong> Executed routine system maintenance, hardware diagnostics, and OS performance optimizations.</li>
+                  <li><strong>Digital Records:</strong> Maintained high-security digital backups, documentation, and supported critical corporate workflows.</li>
+                </ul>
+                <div class="role-tech-tags">
+                  <span>System Administration</span>
+                  <span>Computer Operations</span>
+                  <span>IT Support</span>
+                  <span>Troubleshooting</span>
+                  <span>MS Office</span>
+                  <span>File Management</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 2: Web Dev Teacher -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-icon"><i class="fa-solid fa-code"></i></div>
+            </div>
+            <div class="timeline-card glass-panel tilt-effect">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Web Development Teacher</h3>
+                  <div class="role-company"><i class="fa-solid fa-landmark"></i> Govt. Program – NAVTTC Institute of Infotech</div>
+                </div>
+                <div class="role-period">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>2024 – 2025</span>
+                </div>
+              </div>
+              <div class="role-body">
+                <p class="role-summary">
+                  Instructed students in modern web technologies, front-end architecture, and practical coding standards under government vocational initiatives.
+                </p>
+                <ul class="role-responsibilities">
+                  <li>Taught web development concepts, HTML5, CSS3, JavaScript, and responsive UI layout design.</li>
+                  <li>Conducted interactive coding workshops, graded student web projects, and mentored junior developers.</li>
+                </ul>
+                <div class="role-tech-tags">
+                  <span>Web Development</span>
+                  <span>HTML5 / CSS3 / JS</span>
+                  <span>Front-End UI</span>
+                  <span>NAVTTC Program</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 3: Academic Teacher -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            </div>
+            <div class="timeline-card glass-panel tilt-effect">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Teacher – Matric / ICS</h3>
+                  <div class="role-company"><i class="fa-solid fa-school"></i> Al Qadeer Academy</div>
+                </div>
+                <div class="role-period">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>2023 – 2026</span>
+                </div>
+              </div>
+              <div class="role-body">
+                <p class="role-summary">
+                  Delivered comprehensive academic instruction and computer science curricula to secondary and intermediate students.
+                </p>
+                <ul class="role-responsibilities">
+                  <li>Taught Matriculation and Intermediate (ICS) students core computer theory, programming logic, and mathematics.</li>
+                  <li>Assisted students in mastering technical problem-solving and achieving academic milestones.</li>
+                </ul>
+                <div class="role-tech-tags">
+                  <span>ICS & Matric</span>
+                  <span>Computer Science</span>
+                  <span>Pedagogy</span>
+                  <span>Classroom Leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Card 4: Vocational Computer Teacher -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            </div>
+            <div class="timeline-card glass-panel tilt-effect">
+              <div class="timeline-card-header">
+                <div>
+                  <h3 class="role-title">Computer Teacher – Vocational Training Program</h3>
+                  <div class="role-company"><i class="fa-regular fa-building"></i> Chaudhary Brothers Textile Mills</div>
+                </div>
+                <div class="role-period">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  <span>2021 – 2026</span>
+                </div>
+              </div>
+              <div class="role-body">
+                <p class="role-summary">
+                  Designed and conducted practical workplace computer training for industrial personnel and apprentices.
+                </p>
+                <ul class="role-responsibilities">
+                  <li>Taught essential computer operations, Microsoft Office (Word, Excel, PowerPoint), and email etiquette.</li>
+                  <li>Empowered staff with practical IT skills to boost workplace digital documentation efficiency.</li>
+                </ul>
+                <div class="role-tech-tags">
+                  <span>Vocational Training</span>
+                  <span>Office Automation</span>
+                  <span>Corporate Literacy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & EXPERTISE SECTION (Filterable Tabs & Progress Bars)
+         ========================================================================== -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Technical Competence</span>
+          <h2 class="section-title">Skills & <span class="text-gradient">Expertise</span></h2>
+          <p class="section-desc">A well-rounded technical toolkit spanning system administration, web development, and digital tools.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-filter-tabs reveal-on-scroll" role="tablist">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-tab" data-filter="systems" role="tab" aria-selected="false">IT & Systems</button>
+          <button class="filter-tab" data-filter="web" role="tab" aria-selected="false">Web & Design</button>
+          <button class="filter-tab" data-filter="tools" role="tab" aria-selected="false">Productivity & AI</button>
+          <button class="filter-tab" data-filter="soft" role="tab" aria-selected="false">Soft Skills</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skillsGrid">
+          
+          <!-- Skill: Computer Operations -->
+          <div class="skill-card glass-panel tilt-effect" data-category="systems">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-desktop"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Computer Operations</span>
+                <span class="skill-percentage">98%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 98%;"></div>
+              </div>
+              <span class="skill-note">Workstations, OS, Peripheral Setup</span>
+            </div>
+          </div>
+
+          <!-- Skill: System Administration -->
+          <div class="skill-card glass-panel tilt-effect" data-category="systems">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">System Administration</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 95%;"></div>
+              </div>
+              <span class="skill-note">User Management, Security, Backups</span>
+            </div>
+          </div>
+
+          <!-- Skill: IT Support & Troubleshooting -->
+          <div class="skill-card glass-panel tilt-effect" data-category="systems">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">IT Support & Troubleshooting</span>
+                <span class="skill-percentage">96%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 96%;"></div>
+              </div>
+              <span class="skill-note">Hardware, Software & OS Diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Skill: Basic Networking -->
+          <div class="skill-card glass-panel tilt-effect" data-category="systems">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Basic Networking</span>
+                <span class="skill-percentage">88%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 88%;"></div>
+              </div>
+              <span class="skill-note">LAN, Routers, IP Config & Sharing</span>
+            </div>
+          </div>
+
+          <!-- Skill: Web Development -->
+          <div class="skill-card glass-panel tilt-effect" data-category="web">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Web Development</span>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 92%;"></div>
+              </div>
+              <span class="skill-note">HTML5, CSS3, JavaScript & Responsive Layouts</span>
+            </div>
+          </div>
+
+          <!-- Skill: WordPress CMS -->
+          <div class="skill-card glass-panel tilt-effect" data-category="web">
+            <div class="skill-icon-wrapper">
+              <i class="fa-brands fa-wordpress"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">WordPress & Freelancing</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 90%;"></div>
+              </div>
+              <span class="skill-note">Theme Customization, Plugins & CMS</span>
+            </div>
+          </div>
+
+          <!-- Skill: Graphic Designing & Photoshop -->
+          <div class="skill-card glass-panel tilt-effect" data-category="web">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Graphic Design / Photoshop</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 85%;"></div>
+              </div>
+              <span class="skill-note">Adobe Photoshop, Digital Assets, UI</span>
+            </div>
+          </div>
+
+          <!-- Skill: Microsoft Office Suite -->
+          <div class="skill-card glass-panel tilt-effect" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-file-excel"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Microsoft Office Suite</span>
+                <span class="skill-percentage">97%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 97%;"></div>
+              </div>
+              <span class="skill-note">Word, Excel, PowerPoint, Access</span>
+            </div>
+          </div>
+
+          <!-- Skill: AI & Prompt Engineering -->
+          <div class="skill-card glass-panel tilt-effect" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Artificial Intelligence & Prompts</span>
+                <span class="skill-percentage">92%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 92%;"></div>
+              </div>
+              <span class="skill-note">Prompt Engineering, LLMs & AI Workflows</span>
+            </div>
+          </div>
+
+          <!-- Skill: Digital Documentation -->
+          <div class="skill-card glass-panel tilt-effect" data-category="tools">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-folder-open"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Digital Documentation</span>
+                <span class="skill-percentage">94%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 94%;"></div>
+              </div>
+              <span class="skill-note">Record Management & Administrative IT</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills Group -->
+          <div class="skill-card glass-panel tilt-effect" data-category="soft">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Leadership & Teamwork</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 95%;"></div>
+              </div>
+              <span class="skill-note">Team Collaboration & Mentoring</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-panel tilt-effect" data-category="soft">
+            <div class="skill-icon-wrapper">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="skill-info">
+              <div class="skill-title-row">
+                <span class="skill-name">Communication & Problem Solving</span>
+                <span class="skill-percentage">96%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 96%;"></div>
+              </div>
+              <span class="skill-note">Critical Thinking, Public Relations & Time Mgmt</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CERTIFICATIONS & ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="certifications" class="certifications-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Credentials & Honors</span>
+          <h2 class="section-title">Certifications & <span class="text-gradient">Achievements</span></h2>
+          <p class="section-desc">Verified credentials in computer systems, web development, freelancing, and artificial intelligence.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="cert-showcase-grid">
+          
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">Professional Diploma</span>
+              <h3 class="cert-name">14-Month Professional Computer Diploma</h3>
+              <p class="cert-desc">Comprehensive curriculum in computer hardware, office applications, operating systems, and IT management.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">Government Accredited</span>
+              <h3 class="cert-name">3-Month Web Development Certification</h3>
+              <p class="cert-desc">NAVTTC Government Program — Intensive hands-on training in front-end development and web standards.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">DigiSkills Training</span>
+              <h3 class="cert-name">DigiSkills – Freelancing Certification</h3>
+              <p class="cert-desc">3 Months (April 2026 to July 2026) — Professional freelancing, client communication, and digital services delivery.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">CMS Specialization</span>
+              <h3 class="cert-name">WordPress Freelancing Certification</h3>
+              <p class="cert-desc">3 Months (April 2026 to July 2026) — Building responsive business websites, custom themes, and eCommerce.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">AI Global Initiative</span>
+              <h3 class="cert-name">One Million Prompts Initiative</h3>
+              <p class="cert-desc">AI Achievement Certification in Prompt Engineering and advanced artificial intelligence prompting methodologies.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">International AI Initiative</span>
+              <h3 class="cert-name">Dubai AI / Artificial Intelligence Initiative</h3>
+              <p class="cert-desc">Specialized AI training exploring future technologies, prompt systems, and generative tools.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">Community Service</span>
+              <h3 class="cert-name">Regional Blood Center Multan</h3>
+              <p class="cert-desc">Honored for voluntary participation and community welfare engagement in regional healthcare programs.</p>
+            </div>
+          </div>
+
+          <div class="cert-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="cert-badge-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="cert-details">
+              <span class="cert-type">Sports & Team Spirit</span>
+              <h3 class="cert-name">Tug of War Championship</h3>
+              <p class="cert-desc">Active athletic participation demonstrating physical endurance, discipline, and outstanding teamwork.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION & ACADEMICS SECTION
+         ========================================================================== -->
+    <section id="education" class="education-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Academic Qualifications</span>
+          <h2 class="section-title">Education & <span class="text-gradient">Academics</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="education-grid">
+          
+          <div class="edu-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="edu-icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-badge in-progress">In Progress (4-Year)</div>
+            <h3 class="edu-degree-title">BS in Information Technology (BS IT)</h3>
+            <div class="edu-institution"><i class="fa-solid fa-building-columns"></i> Bahauddin Zakariya University (BZU)</div>
+            <p class="edu-description">Advanced study in software engineering, database management, computer networks, cyber systems, and IT architecture.</p>
+          </div>
+
+          <div class="edu-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="edu-icon-circle"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="edu-badge completed">Completed 2022</div>
+            <h3 class="edu-degree-title">Intermediate in Computer Science (ICS)</h3>
+            <div class="edu-institution"><i class="fa-solid fa-landmark"></i> BISE D.G. Khan</div>
+            <p class="edu-description">Strong academic foundation in computer programming, computer logic, mathematics, and physics.</p>
+          </div>
+
+          <div class="edu-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="edu-icon-circle"><i class="fa-solid fa-book"></i></div>
+            <div class="edu-badge completed">Completed 2020</div>
+            <h3 class="edu-degree-title">Matriculation (Science)</h3>
+            <div class="edu-institution"><i class="fa-solid fa-school"></i> BISE D.G. Khan</div>
+            <p class="edu-description">Secondary school education with high emphasis on sciences, mathematics, and fundamental computer basics.</p>
+          </div>
+
+          <div class="edu-card glass-panel tilt-effect reveal-on-scroll">
+            <div class="edu-icon-circle"><i class="fa-solid fa-quran"></i></div>
+            <div class="edu-badge completed">Completed 2020</div>
+            <h3 class="edu-degree-title">Hifz-e-Quran</h3>
+            <div class="edu-institution"><i class="fa-solid fa-mosque"></i> Wafaq-ul-Madaris Al-Arabia Pakistan</div>
+            <p class="edu-description">Complete memorization of the Holy Quran, fostering profound memory discipline, focus, and moral integrity.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL REFERENCE SECTION
+         ========================================================================== -->
+    <section id="reference" class="reference-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Verified Endorsement</span>
+          <h2 class="section-title">Professional <span class="text-gradient">Reference</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="reference-wrapper reveal-on-scroll">
+          <div class="reference-card-hero glass-panel tilt-effect">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="ref-content-block">
+              <p class="ref-quote">
+                "Aqib Fakir has demonstrated exemplary commitment, technical aptitude, and dependable problem-solving throughout his 5 years supporting computer operations and administrative systems at Chaudhary Brothers Textile Mills."
+              </p>
+              <div class="ref-author-row">
+                <div class="ref-avatar">NA</div>
+                <div class="ref-author-meta">
+                  <h4 class="ref-name">Nadeem Asim</h4>
+                  <p class="ref-designation">Administration Officer</p>
+                  <p class="ref-workplace">Chaudhary Brothers Textile Mills</p>
+                  <div class="ref-contact-pill">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:0662490179">066-2490179</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION (Interactive Form & Direct Channels)
+         ========================================================================== -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="text-gradient">Aqib Fakir</span></h2>
+          <p class="section-desc">Have an IT role, technical opportunity, or project? Reach out directly today.</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Direct Channels -->
+          <div class="contact-info-panel glass-panel tilt-effect reveal-on-scroll">
+            <h3 class="panel-heading">Direct Channels</h3>
+            <p class="panel-sub">Feel free to call, email, or message anytime.</p>
+
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">Phone & WhatsApp</span>
+                <a href="tel:+923147005271" class="channel-value">+92 314 7005271</a>
+              </div>
+              <button class="copy-btn" data-copy="+923147005271" title="Copy Phone Number">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">Official Email</span>
+                <a href="mailto:aqibfakir6@gmail.com" class="channel-value">aqibfakir6@gmail.com</a>
+              </div>
+              <button class="copy-btn" data-copy="aqibfakir6@gmail.com" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="channel-info">
+                <span class="channel-label">Location</span>
+                <span class="channel-value">Umer Farooq Colony, Muzaffargarh, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="resume-cta-box">
+              <div class="cta-text">
+                <strong>Need a clean, printed copy?</strong>
+                <span>Open the corporate 1-page CV ready for export.</span>
+              </div>
+              <a href="resume.html" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-print"></i> Open 1-Page CV
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-panel glass-panel tilt-effect reveal-on-scroll">
+            <h3 class="panel-heading">Send a Direct Message</h3>
+            <p class="panel-sub">Fill out the form below to send an immediate inquiry.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="formName" class="form-label">Your Name <span class="req">*</span></label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Ali Khan" required>
+                <span class="form-error" id="nameError"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="formEmail" class="form-label">Email Address <span class="req">*</span></label>
+                  <input type="email" id="formEmail" class="form-input" placeholder="name@company.com" required>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="formPhone" class="form-label">Phone Number</label>
+                  <input type="tel" id="formPhone" class="form-input" placeholder="+92 ...">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="formSubject" class="form-label">Subject <span class="req">*</span></label>
+                <input type="text" id="formSubject" class="form-input" placeholder="Job Opportunity / Project Inquiry" required>
+                <span class="form-error" id="subjectError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Message <span class="req">*</span></label>
+                <textarea id="formMessage" rows="4" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-full" id="submitBtn">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+
+            <div id="formSuccessMessage" class="form-success-banner" style="display: none;">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Thank you!</strong> Your message has been prepared. (This will launch your email client with your pre-filled inquiry).
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RESUME QUICK PREVIEW MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="resumeModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <i class="fa-solid fa-file-lines text-accent"></i>
+          <h3>Aqib Fakir — 1-Page Resume Quick Viewer</h3>
+        </div>
+        <div class="modal-actions">
+          <a href="resume.html" target="_blank" class="btn btn-sm btn-primary">
+            <i class="fa-solid fa-external-link"></i> Full Page View
+          </a>
+          <button class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close modal">&times;</button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="resume.html" class="resume-iframe" title="Aqib Fakir Resume Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-avatar">AF</div>
+        <div>
+          <div class="footer-name">AQIB FAKIR</div>
+          <p class="footer-desc">IT Professional &bull; System Administrator &bull; Web Developer</p>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="resume.html">Printable CV</a>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2026 AQIB FAKIR. All Rights Reserved.</p>
+        <p class="footer-subcopy">Umer Farooq Colony, Muzaffargarh &bull; <a href="mailto:aqibfakir6@gmail.com">aqibfakir6@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

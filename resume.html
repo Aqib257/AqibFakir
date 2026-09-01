@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQIB FAKIR - Professional CV / Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+  <!-- Top Action Bar (Hidden in Print) -->
+  <header class="action-bar no-print">
+    <div class="action-container">
+      <div class="brand-badge">
+        <i class="fa-solid fa-file-shield"></i>
+        <span>Professional 1-Page Corporate CV</span>
+      </div>
+      <div class="action-controls">
+        <a href="index.html" class="btn btn-outline" title="Back to Interactive Portfolio">
+          <i class="fa-solid fa-arrow-left"></i> View Portfolio Website
+        </a>
+        <label for="photoUpload" class="btn btn-secondary" title="Change or load original portrait photo">
+          <i class="fa-solid fa-camera"></i> Change Photo
+          <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+        </label>
+        <button id="themeToggleBtn" class="btn btn-secondary" title="Toggle Print Accent Scheme">
+          <i class="fa-solid fa-palette"></i> Theme Accent
+        </button>
+        <button id="printBtn" class="btn btn-primary">
+          <i class="fa-solid fa-print"></i> Print / Save PDF (A4)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Resume Sheet Container (Strict A4 Exact Fit) -->
+  <main class="resume-wrapper">
+    <div class="resume-page" id="resumeContent">
+      
+      <!-- LEFT SIDEBAR -->
+      <aside class="resume-sidebar">
+        <!-- Candidate Photo & Identity -->
+        <div class="profile-photo-wrapper">
+          <div class="profile-photo-frame" id="photoContainer">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%231e3a8a'/><stop offset='100%' stop-color='%230284c7'/></linearGradient></defs><rect width='160' height='160' fill='url(%23grad)' rx='80'/><circle cx='80' cy='58' r='28' fill='%23ffffff' opacity='0.9'/><path d='M35 130 C45 95, 115 95, 125 130 Z' fill='%23ffffff' opacity='0.9'/><text x='80' y='150' font-family='Arial' font-size='11' font-weight='bold' fill='%23ffffff' text-anchor='middle'>AQIB FAKIR</text></svg>" 
+                 alt="Aqib Fakir" 
+                 id="candidatePhoto"
+                 class="candidate-img">
+            <div class="photo-overlay-hint no-print">
+              <i class="fa-solid fa-camera"></i>
+              <span>Click to Upload</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Details -->
+        <section class="sidebar-section">
+          <h2 class="sidebar-title"><i class="fa-solid fa-address-card"></i> Contact Details</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <div class="contact-info">
+                <span class="label">Phone</span>
+                <a href="tel:+923147005271" class="value">+92 314 7005271</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <div class="contact-info">
+                <span class="label">Email</span>
+                <a href="mailto:aqibfakir6@gmail.com" class="value text-break">aqibfakir6@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+              <div class="contact-info">
+                <span class="label">Location</span>
+                <span class="value">Umer Farooq Colony, Muzaffargarh, Pakistan</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="sidebar-section">
+          <h2 class="sidebar-title"><i class="fa-solid fa-microchip"></i> Technical Skills</h2>
+          <div class="skill-group">
+            <div class="skill-category-label">IT & Systems</div>
+            <div class="tag-cloud">
+              <span class="skill-tag">Computer Operations</span>
+              <span class="skill-tag">System Administration</span>
+              <span class="skill-tag">IT Support & Troubleshooting</span>
+              <span class="skill-tag">Basic Networking</span>
+              <span class="skill-tag">Digital Documentation</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-category-label">Development & Design</div>
+            <div class="tag-cloud">
+              <span class="skill-tag">Web Development</span>
+              <span class="skill-tag">Front-End (HTML/CSS/JS)</span>
+              <span class="skill-tag">WordPress CMS</span>
+              <span class="skill-tag">Graphic Design</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-category-label">Productivity & Emerging Tech</div>
+            <div class="tag-cloud">
+              <span class="skill-tag">Microsoft Office Suite</span>
+              <span class="skill-tag">Artificial Intelligence</span>
+              <span class="skill-tag">Prompt Engineering</span>
+              <span class="skill-tag">Freelancing</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="sidebar-section">
+          <h2 class="sidebar-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+          <div class="timeline-compact">
+            <div class="edu-item">
+              <div class="edu-year">In Progress (4-Year)</div>
+              <div class="edu-degree">BS in Information Technology (BS IT)</div>
+              <div class="edu-inst">Bahauddin Zakariya University (BZU)</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2020 – 2022</div>
+              <div class="edu-degree">ICS (Computer Science)</div>
+              <div class="edu-inst">BISE D.G. Khan</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2020</div>
+              <div class="edu-degree">Matriculation (Science)</div>
+              <div class="edu-inst">BISE D.G. Khan</div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-year">2020</div>
+              <div class="edu-degree">Hifz-e-Quran</div>
+              <div class="edu-inst">Wafaq-ul-Madaris Al-Arabia</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Languages & Soft Skills -->
+        <section class="sidebar-section">
+          <h2 class="sidebar-title"><i class="fa-solid fa-globe"></i> Languages & Hobbies</h2>
+          <div class="lang-row">
+            <div class="lang-pill"><strong>Urdu</strong> (Native)</div>
+            <div class="lang-pill"><strong>English</strong> (Professional)</div>
+          </div>
+          <div class="hobbies-compact">
+            <span class="hobby-item"><i class="fa-solid fa-person-swimming"></i> Swimming</span>
+            <span class="hobby-item"><i class="fa-solid fa-baseball-bat-ball"></i> Cricket</span>
+            <span class="hobby-item"><i class="fa-solid fa-book-open"></i> Reading</span>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- MAIN CONTENT COLUMN -->
+      <section class="resume-main">
+        
+        <!-- Header Banner -->
+        <header class="main-header">
+          <div class="header-badge">IT PROFESSIONAL & SYSTEM ADMINISTRATOR</div>
+          <h1 class="candidate-name">AQIB FAKIR</h1>
+          <p class="candidate-headline">Computer Operator & System Administrator | Web Developer</p>
+          <div class="header-divider"></div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="main-section summary-section">
+          <h2 class="section-heading">
+            <span class="heading-icon"><i class="fa-solid fa-user-tie"></i></span>
+            <span>Professional Summary</span>
+          </h2>
+          <p class="summary-text">
+            A motivated, detail-oriented, and dependable <strong>IT Professional</strong> with <strong>5 years of proven experience</strong> as a Computer Operator and System Administrator. Highly skilled in computer operations, corporate IT support, system administration, Microsoft Office, web development, WordPress CMS, and technical troubleshooting. Demonstrates leadership, effective communication, and collaborative problem-solving abilities with an unwavering commitment to operational excellence and continuous technological advancement.
+          </p>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="main-section experience-section">
+          <h2 class="section-heading">
+            <span class="heading-icon"><i class="fa-solid fa-briefcase"></i></span>
+            <span>Professional Experience</span>
+          </h2>
+
+          <div class="experience-card primary-exp">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Computer Operator & System Administrator</h3>
+                <span class="exp-company"><i class="fa-regular fa-building"></i> Chaudhary Brothers Textile Mills</span>
+              </div>
+              <div class="exp-meta">
+                <span class="exp-duration"><i class="fa-regular fa-calendar-check"></i> 01 Sep 2021 – 31 Aug 2026</span>
+                <span class="exp-badge">5 Years</span>
+              </div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Supervised day-to-day computer operations, IT infrastructure maintenance, and office computing systems.</li>
+              <li>Delivered timely Tier-1/Tier-2 technical support to staff and end-users, minimizing operational downtime.</li>
+              <li>Configured and maintained hardware systems, OS software, peripheral devices, and local networking tasks.</li>
+              <li>Conducted system troubleshooting, data backups, hardware optimization, and preventative maintenance.</li>
+              <li>Managed secure digital records, documentation, and supported critical administrative computing workflows.</li>
+            </ul>
+          </div>
+
+          <div class="exp-grid-dual">
+            <div class="experience-card compact">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Web Development Teacher</h3>
+                  <span class="exp-company">NAVTTC Govt. Program – Infotech</span>
+                </div>
+                <span class="exp-duration-compact">2024 – 2025</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Delivered structured curriculum in modern web technologies and front-end development (HTML, CSS, JS).</li>
+                <li>Mentored students through practical lab sessions and real-world interface design projects.</li>
+              </ul>
+            </div>
+
+            <div class="experience-card compact">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role">Computer & Academic Teacher</h3>
+                  <span class="exp-company">Al Qadeer Academy</span>
+                </div>
+                <span class="exp-duration-compact">2023 – 2026</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Taught Matric and ICS students computer science fundamentals and academic coursework.</li>
+                <li>Fostered analytical thinking, problem-solving skills, and classroom excellence.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience-card compact single-line-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Computer Teacher (Vocational Training Program)</h3>
+                <span class="exp-company">Chaudhary Brothers Textile Mills</span>
+              </div>
+              <span class="exp-duration-compact">2021 – 2026</span>
+            </div>
+            <p class="card-desc-compact">Facilitated corporate computer literacy, Microsoft Office productivity, and practical IT workflows for staff.</p>
+          </div>
+        </section>
+
+        <!-- Key Certifications & Achievements -->
+        <section class="main-section certifications-section">
+          <h2 class="section-heading">
+            <span class="heading-icon"><i class="fa-solid fa-award"></i></span>
+            <span>Certifications & Achievements</span>
+          </h2>
+          <div class="cert-grid">
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>14-Month Professional Computer Diploma</strong>
+                <span class="cert-sub">Comprehensive IT & Office Operations</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>3-Month Web Development Certification</strong>
+                <span class="cert-sub">NAVTTC Government Program</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>DigiSkills & WordPress Freelancing (3 Months)</strong>
+                <span class="cert-sub">April 2026 – July 2026</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>One Million Prompts & Dubai AI Initiative</strong>
+                <span class="cert-sub">AI Specialization & Prompt Engineering</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>Regional Blood Center Multan</strong>
+                <span class="cert-sub">Community Service Participation</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-circle-check cert-icon"></i>
+              <div>
+                <strong>Athletic Team Participation</strong>
+                <span class="cert-sub">Tug of War Championship</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Professional Reference -->
+        <section class="main-section reference-section">
+          <h2 class="section-heading">
+            <span class="heading-icon"><i class="fa-solid fa-handshake"></i></span>
+            <span>Professional Reference</span>
+          </h2>
+          <div class="reference-box">
+            <div class="ref-person">
+              <strong>Nadeem Asim</strong> — <span class="ref-title">Administration Officer</span>
+            </div>
+            <div class="ref-org">Chaudhary Brothers Textile Mills</div>
+            <div class="ref-contact">
+              <i class="fa-solid fa-phone"></i> <strong>Phone:</strong> 066-2490179
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="resume.js"></script>
+</body>
+</html>
