@@ -55,26 +55,3 @@ Google Fonts	Typography
 📌 Scrollspy navigation system
 🖨️ One-click Print / Save CV as PDF
 📸 Preview
-<p align="center"> <img src="aqib.jpg" width="220"/> </p>
-📦 Installation
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-open index.html
-🌐 Live Demo
-
-👉 Add your GitHub Pages link here
-Example:
-https://your-username.github.io/portfolio
-
-📞 Contact
-📧 Email: aqibfakir6@gmail.com
-📱 Phone: +92 314 7005271
-🧑‍💻 Author
-
-Aqib Fakir
-IT Professional | SysAdmin | Web Developer
-
-⭐ Support
-
-If you like this project:
-👉 Give it a ⭐ on GitHub
